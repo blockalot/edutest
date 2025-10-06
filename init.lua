@@ -6606,14 +6606,14 @@ local initialize_forms = function(
             if not minetest.check_player_privs(
                 own_name,
                 {
-                    server = true,
+                    teacher = true,
                 }
             ) then
                 minetest.chat_send_player(
                     own_name,
                     "EDUtest: " .. S(
                         "missing privilege: @1",
-                        "server"
+                        "teacher"
                     )
                 )
                 return true
